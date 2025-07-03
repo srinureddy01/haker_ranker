@@ -1,0 +1,8 @@
+
+def function_calling(nums : list()) -> int:
+    return sum(numbers for numbers in nums)
+ 
+     
+numbers = [10, -5, 20]
+result = function_calling(numbers)
+print(result)
