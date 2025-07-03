@@ -1,0 +1,8 @@
+def count_vowels_pythonic(text: str) -> int:
+    vowels = "aeiou" # Can use a string for vowels too
+    return sum(1 for char in text if char.lower() in vowels)
+    
+    
+case = "aeiou"
+result = count_vowels_pythonic(case)
+print(result)
