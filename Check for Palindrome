@@ -1,0 +1,23 @@
+def palindrome_finder(string):
+    
+    holder = []
+    for char in string:
+        if "a" <= char.lower() <= "z" or '0' <= char <= '9' :
+            holder.append(char.lower())
+            
+    process_string = "".join(holder)
+    
+    length = len(process_string)
+    rev_string = ""
+    length = length - 1 
+    while (length >= 0 ):
+        rev_string = rev_string + process_string[length]
+        length = length - 1 
+    if process_string == rev_string:
+        return True 
+    else :
+        return False
+            
+strings = "asjdfha"
+result = palindrome_finder(strings)
+print(result)
